@@ -1,0 +1,52 @@
+#header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  background: #000;
+  z-index: 99;
+}
+
+.logo {
+  width: 140px;
+  float: left;
+  margin: 24px 0;
+
+  @include media('>=tablet') {
+    width: 198px;
+    margin-bottom: 23px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.btn-holder {
+  float: right;
+
+  .btn {
+    background-color: #9d0b8b;
+    background-image: linear-gradient(to right, white 0%, #b9b9b9 100%);
+    border-radius: 2px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25);
+    font: 700 12px/1.3333 $montserrat;
+    text-transform: uppercase;
+    color: #262626;
+    padding: 9px 12px 11px;
+    margin: 16px 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    min-width: 110px;
+
+    @include media('>=tablet') {
+      margin: 18px 0 17px;
+      min-width: 155px;
+      padding: 11px 12px 13px;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, #b9b9b9 0%, white 100%);
+    }
+  }
+}

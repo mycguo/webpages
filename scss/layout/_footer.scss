@@ -1,0 +1,38 @@
+#footer {
+  background: #000;
+  color: #fff;
+  padding: 2px 0 10px;
+
+  @include media('>=tablet') {
+    padding: 20px 0;
+  }
+
+  .logo {
+    @include media('>=tablet') {
+      width: 173px;
+    }
+
+    @include media('<tablet') {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .footer-text {
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 0 10px;
+
+    @include media('>=tablet') {
+      text-align: right;
+      font-size: 18px;
+      padding: 22px 0 22px 0;
+    }
+
+    @include media('>=desktop') {
+      font-size: 20px;
+    }
+  }
+}
